@@ -1,0 +1,49 @@
+
+{% block content %}
+
+    <style>
+    h1 {text-align: center;}
+    p {text-align: justify;}
+
+    </style>
+
+    <h1>
+       Instructions
+    </h1>
+<br>
+    <p>
+        In this study, you will be in a randomly formed group
+        of {{ C.PLAYERS_PER_GROUP }} participants for 6 periods.
+        </p>
+<p>
+
+       <u>At each period:</u>
+    </p>
+        <p>Each participant will be given
+         {{ C.ENDOWMENT }}. The group
+        has the opportunity to undertake a joint project.  Each participant in
+        the group decides how much she or he is going to contribute to
+        the project. Contribution could be any integer from 0
+        to {{ C.ENDOWMENT }}.
+    </p>
+    <p>
+        The earnings from the project are calculated as follows: The
+        contributions of all {{ C.PLAYERS_PER_GROUP }} participants are
+        added up, the total contribution
+        is multiplied by a factor of {{ C.MULTIPLIER }}, and the
+        resulting amount is the total earnings from the project, which is
+        evenly split among all {{ C.PLAYERS_PER_GROUP }}
+        participants. Your payoff equals your earnings from the project, plus
+        the amount you did not contribute.
+    </p>
+
+<p>
+        At the end of the experiment, your total payoff will correspond to the sum of the payoffs you accumulated over the 6 periods.
+</p>
+    <p>
+    The participant with the highest total payoff will be given 5 euros next week!
+    </p>
+    </div>
+</div>
+
+{{ endblock }}

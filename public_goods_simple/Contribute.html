@@ -1,0 +1,15 @@
+{{ extends "global/Page.html" }}
+{{ block title }} Round {{ view.round_number }}- Your Contribution to the joint project:{{ endblock }}
+{{ block content }}
+
+    <p>
+ <i> Remember that your payoff for this round  equals your earnings from the project, plus
+     the amount you did not contribute. </i>
+    </p>
+
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}
