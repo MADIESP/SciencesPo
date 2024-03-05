@@ -6,7 +6,7 @@ SESSION_CONFIGS = [
         name='PublicGood',
         display_name="PublicGood",
         app_sequence=['public_goods_simple'],
-        num_demo_participants=4,
+        num_demo_participants=2,
     ),
 
 ]
